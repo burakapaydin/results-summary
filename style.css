@@ -36,7 +36,7 @@ main {
   align-items: center;
   flex-direction: column;
 }
-main p {
+.sign {
   margin-top: 2rem;
 }
 #wrapper {
@@ -160,6 +160,7 @@ main p {
   margin-top: 1.4rem;
   cursor: pointer;
   transition: 0.5s ease;
+  font-size: 1.6rem;
 }
 .btn:hover {
   transform: scale(1.1);
