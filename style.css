@@ -44,8 +44,8 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
-  width: 55rem;
-  height: 38rem;
+  width: 60rem;
+  height: 58vh;
   color: var(--white);
   border-radius: 30px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
@@ -56,17 +56,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
   width: 50%;
+  height: 100%;
   text-align: center;
   border-radius: 30px;
 }
 .left-col h1 {
   font-size: 1.8rem;
+  margin-bottom: 3rem;
   color: var(--font-gray);
 }
 .left-col h3 {
   font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 .left-col p {
   font-size: 1.4rem;
@@ -86,6 +88,7 @@ main {
   padding: 3rem;
   background-image: var(--ball);
   animation: pulse 1s ease infinite;
+  margin-bottom: 4rem;
 }
 @keyframes pulse {
   0% {
@@ -99,12 +102,11 @@ main {
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
   width: 50%;
-  min-width: 60%;
 }
 .right-col h4 {
   color: var(--btn);
+  margin-bottom: 2.4rem;
 }
 .row {
   display: flex;
@@ -112,9 +114,9 @@ main {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
   border-radius: 5px;
   color: var(--btn);
+  margin-bottom: 1.4rem;
 }
 .row span {
   font-size: 1.4rem;
