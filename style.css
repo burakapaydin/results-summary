@@ -27,10 +27,7 @@ html {
   font-size: 62.5%;
 }
 main {
-  min-height: 100vh;
-  width: 100%;
-  height: 100%;
-  max-width: 1440px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,12 +37,13 @@ main {
   margin-top: 2rem;
 }
 #wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
-  width: 60rem;
-  height: 58vh;
+  max-width: 60rem;
+  width: 100%;
   color: var(--white);
   border-radius: 30px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
@@ -56,7 +54,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
   height: 100%;
   text-align: center;
   border-radius: 30px;
@@ -84,7 +82,8 @@ main {
 }
 .ball {
   border-radius: 9999px;
-  width: 150px;
+  width: 15rem;
+  height: 15rem;
   padding: 3rem;
   background-image: var(--ball);
   animation: pulse 1s ease infinite;
@@ -102,7 +101,7 @@ main {
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 .right-col h4 {
   color: var(--btn);
@@ -168,21 +167,46 @@ main {
   transform: scale(1.1);
 }
 /* mobile */
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   #wrapper {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    min-width: 270px;
+    grid-template-columns: 1fr;
   }
   .left-col {
-    width: 100%;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
+    padding-top: 10rem;
+  }
+  .left-col h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .left-col p {
+    max-width: 100%;
+  }
+  .ball {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 999rem;
+    padding: 6%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .ball h2 {
+    font-size: 4rem;
+  }
+  .ball span {
+    font-size: 1.1rem;
   }
   .right-col {
-    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+  .right-col h4 {
+    margin-bottom: 1rem;
+  }
+  .btn {
+    margin-top: 0.5rem;
+  }
+  .sign {
+    display: none;
   }
   .row {
     flex-wrap: wrap;
